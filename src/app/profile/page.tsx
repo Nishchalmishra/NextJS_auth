@@ -2,7 +2,7 @@
 import axios from "axios";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React from "react";
+import React, {useEffect} from "react";
 
 export default function ProfilePage() {
 
@@ -24,11 +24,21 @@ export default function ProfilePage() {
 
     };
 
-    const getUserDetails = async() => {
-        const res = await axios.get("/api/user/userProf")
-        console.log(res.data)
-        setData(res.data.user._id)
-    }
+    // const getUserDetails = async() => {
+    //     const res = await axios.get("/api/user/userProf")
+    //     console.log(res.data)
+    //     setData(res.data.user._id)
+    // }
+
+    useEffect(() => {
+        const getUserDetails = async () => {
+          const res = await axios.get("/api/user/userProf");
+          console.log(res.data);
+          setData(res.data.user._id);
+        };
+        getUserDetails();
+    }, [])
+
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
@@ -40,10 +50,10 @@ export default function ProfilePage() {
              onClick={handleLogout}>
                 Logout
             </button>
-            <button
+            {/* <button
             onClick={getUserDetails}>
                 get details
-            </button>
+            </button> */}
         </div>
     )
 }

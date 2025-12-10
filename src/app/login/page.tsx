@@ -57,16 +57,22 @@ export default function LoginPage() {
             onChange={(e) => setUser({ ...user, password: e.target.value })}
           />
           <button
-            className="bg-green-500 rounded-2xl col-start-2 col-end-4"
+            className="bg-green-500 rounded-2xl col-start-1 col-end-3"
             onClick={handleLogin}
           >
             {disabledButton ? "Fill all the fields" : "Login"}
           </button>
           <Link
-            className="bg-green-500 rounded-2xl col-start-4 col-end-6 flex justify-center items-center"
+            className="bg-green-500 rounded-2xl col-start-3 col-end-5 flex justify-center items-center"
             href={"signup"}
           >
             Signup?
+          </Link>
+          <Link
+            className=" rounded-2xl col-start-5 col-end-6 flex justify-center items-center"
+            href={"forgotpassword"}
+          >
+            forget password?
           </Link>
         </div>
       </div>
