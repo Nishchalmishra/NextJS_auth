@@ -2,7 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-project url = next-js-auth-eta-ten.vercel.app
+project url = next-js-auth-eta-ten.vercel.app/signup
+copy this url to visit the project 
 
 First, run the development server:
 
