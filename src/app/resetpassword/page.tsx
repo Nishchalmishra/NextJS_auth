@@ -35,8 +35,8 @@ export default function ResetPassword() {
     }
 
     return (
-      <div className="grid grid-cols-[1fr_2fr_1fr] grid-rows-[1fr_2fr_1fr] h-lvh max-w-lvw">
-        <div className="grid grid-rows-[1fr_2fr] col-start-2 col-end-3 row-start-2 row-end-3 bg-gray-500 rounded-4xl">
+      <div className=" bg-[linear-gradient(130deg,rgba(154,48,156,1)_0%,rgba(134,30,141,1)_12%,rgba(58,27,138,1)_24%,rgba(9,18,121,1)_40%,rgba(0,255,255,1)_76%)] grid grid-cols-[1fr_2fr_1fr] grid-rows-[1fr_2fr_1fr] h-lvh max-w-lvw">
+        <div className="grid grid-rows-[1fr_2fr] col-start-2 col-end-3 row-start-2 row-end-3 bg-[#1c9eb0] rounded-4xl">
           <div className="flex justify-center items-center m-2 p-4">
             <h2 className="text-black text-3xl">
               <b>Forgot Password</b>

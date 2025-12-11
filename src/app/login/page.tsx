@@ -34,8 +34,8 @@ export default function LoginPage() {
   }, [user]);
 
   return (
-    <div className="grid grid-cols-[1fr_2fr_1fr] grid-rows-[1fr_2fr_1fr] h-lvh max-w-lvw">
-      <div className="grid grid-rows-[1fr_2fr] col-start-2 col-end-3 row-start-2 row-end-3 bg-gray-500 rounded-4xl">
+    <div className="bg-[#020024] bg-[linear-gradient(37deg,rgba(2,0,36,1)0%,rgba(37,37,87,1)11%,rgba(9,9,121,1)27%,rgba(0,212,255,1)100%)] grid grid-cols-[1fr_2fr_1fr] grid-rows-[1fr_2fr_1fr] h-lvh max-w-lvw">
+      <div className="grid grid-rows-[1fr_2fr] col-start-2 col-end-3 row-start-2 row-end-3 bg-[#2c64d5] rounded-4xl">
         <div className="flex justify-center items-center m-2 p-4">
           <h2 className="text-black text-3xl">
             {loading ? "Loading..." : "Login"}
