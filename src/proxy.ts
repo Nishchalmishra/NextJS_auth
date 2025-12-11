@@ -9,8 +9,11 @@ export function proxy(request: NextRequest) {
   
   const token = request.cookies.get('token')?.value || '';
   
-  if(isPublicPath && token) {
-    return NextResponse.redirect(new URL('/', request.nextUrl));
+  if (token) {
+    if (path === "/login") {
+      return NextResponse.redirect(new URL("/", request.nextUrl));
+    }
+    // signup is allowed even with token
   }
 
   if(!isPublicPath && !token) {
